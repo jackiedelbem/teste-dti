@@ -1,0 +1,23 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,500,600,700|Ubuntu:200,300,400,500,600|Source+Sans+Pro:200');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  font-size: 16px;
+  color: $font-color;
+  background: $bg-color;
+  background-attachment: fixed;
+  font-family: Ubuntu;
+  margin: 0;
+  fill: currentColor;
+  overflow-y:scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}

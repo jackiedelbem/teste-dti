@@ -1,0 +1,36 @@
+/* Layouts */
+$layout-content-width: 1200px;
+$layout-page-grid-gap: 1.25rem;
+$layout-grid-gap: 2rem;
+
+/* Styles */
+$vertical-gradient-light: linear-gradient(#35B5B9, #293477);
+$horizontal-gradient-light: linear-gradient(to right, #35B5B9, #293477);
+
+$bg-color: linear-gradient(#529dae, #455989);
+$accent-color: #35b5b9;
+$main-color: #192b6c;
+$main-color-light: #708cb8;
+$font-color: #777777;
+$gray-light: #9e9e9e;
+$gray-ultralight: #eee;
+$gray: #707070;
+$danger-color: red;
+
+$font-weight-extralight: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 500;
+$font-weight-bold: 600;
+
+$regular-box-shadow: 0px 3px 12px rgba(70, 70, 70, 0.3);
+$small-box-shadow: 0px 3px 12px rgba(70, 70, 70, 0.2);
+
+/* Componentes */
+$card-bg-color: white;
+$card-bg-gradient-color: linear-gradient(#fff, #EAF2FD);
+$button-bg-color: #35b5b9;
+$tile-border-color: #D5E1F5;
+$sidebar-background: #293477;
+$detail-modal-left-bg:  linear-gradient(#16295E, #35B5B9);

@@ -1,0 +1,21 @@
+@import '../../assets/scss/variables.scss';
+
+.layout__base {
+
+  box-sizing: border-box;
+
+/* ********* */
+/* SCROLLBAR */
+/* ********* */
+  /* width */
+  ::-webkit-scrollbar {
+      width: 6px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: $accent-color;
+      border-radius: 10px;
+  }
+
+}
