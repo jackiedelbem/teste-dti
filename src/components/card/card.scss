@@ -1,0 +1,9 @@
+@import '../../assets/scss/variables.scss';
+
+.component__card {
+  background-color: $card-bg-color;
+  box-shadow: $regular-box-shadow;
+  border-radius: 5px;
+  padding: 2rem;
+  box-sizing: border-box;
+}

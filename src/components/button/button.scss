@@ -1,0 +1,229 @@
+@import '../../assets/scss/variables.scss';
+
+.component__button {
+  box-sizing: border-box;
+  margin: 0.5rem;
+  min-width: 180px;
+  padding: 0.5rem 2rem;
+  min-height: 2rem;
+
+  background-color: $button-bg-color;
+  color: white;
+  border: 1px solid $button-bg-color;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 1.5rem;
+
+  font-size: 14px;
+  font-family: Ubuntu;
+  font-weight: $font-weight-regular;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: all 0.3s;
+
+  svg {
+    transition: all 0.3s;
+    fill: white;
+  }
+
+  &--light {
+    font-size: 14px;
+    font-weight: $font-weight-light;
+  }
+
+  &--small {
+  min-width: 90px;
+  }
+
+  &:hover {
+    color: $button-bg-color;
+    background-color: white;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.16);
+
+    svg {
+      fill: $button-bg-color;
+    }
+  }
+
+  &:active {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.16);
+  }
+}
+
+
+.component__button--fixed {
+  width: 5rem;
+  height: 1.5rem;
+  padding: 0;
+}
+
+.component__button--blue {
+  background-color: $main-color;
+  border-color: $main-color;
+
+  &:hover {
+    svg {
+      fill: $main-color-light;
+    }
+
+    color: $main-color-light;
+    border: 1px solid $main-color-light;
+  }
+}
+
+.component__button--success {
+  background-color: $accent-color;
+  border-color: $accent-color;
+
+  &:hover {
+    svg {
+      fill: $accent-color;
+    }
+
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
+
+.component__button--gray {
+  svg {
+    fill: $font-color;
+  }
+  font-weight: $font-weight-regular;
+  color: $font-color;
+  border-color: $font-color;
+  background-color:$gray-light;
+  box-shadow: none;
+
+  &:hover {
+    svg {
+      fill: $accent-color;
+    }
+    color: $accent-color;
+    border: 1px solid $gray-light;
+  }
+}
+
+.component__button--white {
+  svg {
+    fill: $font-color;
+  }
+  font-weight: $font-weight-regular;
+  color: $font-color;
+  border-color: $font-color;
+  background-color: white;
+  box-shadow: none;
+
+  &:hover {
+    svg {
+      fill: $accent-color;
+    }
+    color: $accent-color;
+    border: 1px solid $gray-light;
+  }
+}
+
+.component__button--disabled,
+.component__button--disabled:hover {
+  svg {
+    fill: $font-color;
+  }
+  background-color: white;
+  border: 1px solid $font-color;
+  color: $font-color;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.16);
+  cursor: default;
+}
+
+.component__button--outline-green {
+  border-color: $accent-color;
+  color: $accent-color;
+
+  &:hover {
+    svg {
+      fill: $gray;
+    }
+
+    color: $gray;
+    border: 1px solid $gray;
+  }
+}
+
+.component__button--outline-gray {
+  border-color: $gray;
+  color: $gray;
+
+  &:hover {
+    svg {
+      fill: $accent-color;
+    }
+
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
+
+.component__button--outline-blue {
+  border-color: $main-color-light;
+  color: $main-color-light;
+
+  &:hover {
+    svg {
+      fill: $gray;
+    }
+
+    color: $gray;
+    border: 1px solid $gray;
+  }
+}
+
+.component__button--no-fill {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: $font-color;
+
+  &:hover {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: $accent-color;
+
+    svg {
+      fill: $accent-color;
+    }
+  }
+}
+
+
+.component__button--large {
+  min-width: 8rem;
+  min-height: 2.5rem;
+}
+
+.component__button--very-large {
+  min-width: 15rem;
+  min-height: 2.5rem;
+}
+
+.component__button--block {
+  position: relative;
+  margin: 0;
+}
+
+.component__button--full {
+  width: 100%;
+}
+
+.component__button--no-border {
+  border-style: hidden;
+
+  &:hover {
+    border-style: hidden;
+  }
+}
+
+

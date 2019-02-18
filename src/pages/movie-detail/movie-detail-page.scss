@@ -1,0 +1,115 @@
+@import '../../assets/scss/variables.scss';
+
+.page__movie-detail {
+  position: fixed;
+  background: rgba($font-color, 0.7);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s;
+  align-items: center;
+  z-index: 999999;
+  color: $font-color;
+  display: flex;
+
+  &__window {
+    height: 400px;
+    width: 1150px;
+    max-width: $layout-content-width;
+    overflow-x: 546px;
+    overflow-y: 192px;
+    background: white;
+    transition: all 0.75s;
+    opacity: 1;
+    margin: 0 auto;
+    padding: 26px;
+    
+    &__header{
+    border-bottom: 1px solid $font-color;
+    padding-bottom: 10px  ;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "t p";
+      &__title {
+        grid-area: t;
+
+        color:$font-color;
+        font-size: 28px;
+        justify-content: flex-start;
+      }
+
+      &__close-icon {
+        grid-area: p;
+
+        justify-self: flex-end;
+        fill: $accent-color;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+          fill: $font-color;
+        }
+      }
+
+      svg{
+        height: 60px;
+        width: 60px;
+      }
+    }
+
+    &__data{
+    padding-bottom: 10px  ;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto auto auto;
+   
+      &__icon {
+        padding: 3rem 0 0 3rem;
+        fill: $accent-color;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+          fill: $font-color;
+        }
+
+        height: 120px;
+        width: 120px;
+      }
+
+      &__content {
+        padding-top: 3rem;
+        display: grid;
+        min-width: 500px;
+        max-width: 500px;
+        grid-template-columns: auto auto; 
+        
+        &__label {
+          align-self: center;
+          padding-right: 1rem;
+        }
+
+        &__value{
+          align-self: left;
+          font-weight: $font-weight-bold;
+        }
+      }
+
+      &__image {
+        padding: 3rem 0 0 3rem;
+
+        max-width: 200px;
+        max-height: 200px;
+      }
+    }
+  }
+}
+
+.page__movie-detail--hidden {
+  opacity: 0;
+  z-index: -9999;
+}
+
+.page__movie-detail__window--hidden {
+  margin-top: -100%;
+}

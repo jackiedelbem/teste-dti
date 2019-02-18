@@ -1,0 +1,66 @@
+@import '../../assets/scss/variables.scss';
+
+.component__loading {
+  position: fixed;
+  background: rgba(#000, 0.7);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -999;
+  opacity: 0;
+
+  &--loading {
+    z-index: 1000;
+    opacity: 1;
+  }
+}
+
+.component__loading__box {
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: $main-color;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+  color: white;
+  transition: all 0.5s;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  z-index: -999;
+  opacity: 0;
+
+  svg {
+    fill: #fff;
+  }
+
+  &--loading {
+    z-index: 9999;
+    opacity: 1;
+  }
+
+}
+
+.component__loading__icon {
+  animation-name: component__loading--animation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  margin-right: 0.75rem;
+
+}
+
+@keyframes component__loading--animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

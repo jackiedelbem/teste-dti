@@ -1,0 +1,90 @@
+@import '../../assets/scss/variables.scss';
+
+.component__modal {
+  position: fixed;
+  background: rgba(#000, 0.7);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  z-index: 999999;
+  color: $font-color;
+
+  &__title {
+    font-weight: $font-weight-bold;
+    color: $main-color;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-weight: $font-weight-regular;
+  }
+
+  &__button-confirm {
+    margin-top: 3rem;
+    margin-bottom: -0.5rem;
+    margin-right: -0.5rem;
+    justify-self: flex-end;
+  }
+
+  &__window {
+    transition: all 0.75s;
+    background: white;
+    opacity: 1;
+    min-width: 320px;
+    width: auto;
+    max-width: $layout-content-width;
+    margin: 0 auto;
+    height: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: 1rem auto;
+    align-items: center;
+    border-radius: 10px 10px 10px 10px;
+
+    &--full {
+      width: 80% !important;
+      height: 80%;
+      padding-top: 2rem;
+    }
+
+    &__children {
+      &--full {
+        align-self: flex-end;
+        max-height: 100%;
+        margin-top: -4rem;
+        overflow-y: auto;
+      }
+    }
+  }
+
+  &__close-icon {
+    margin-top: -1.5rem;
+    margin-right: -1rem;
+    justify-self: flex-end;
+    fill: $font-color;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      fill: $main-color;
+    }
+
+    &--hidden {
+      fill: transparent;
+    }
+  }
+}
+
+.component__modal--hidden {
+  opacity: 0;
+  z-index: -9999;
+}
+
+.component__modal__window--hidden {
+  opacity: 0;
+}
